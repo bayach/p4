@@ -6,7 +6,15 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+.citation
+{
+    font-size: 17px;
+    font-weight: bold;
+}
+.citation em
+{
+    font-weight: 100;
+}
 a,
 button {
     transition: all .3s ease-in-out;
@@ -677,7 +685,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -753,7 +761,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.671);
     padding: 40px 40px 40px 40px;
 }
 
