@@ -1022,7 +1022,7 @@ h4 {
         padding: 5px;
     }
     .close-lightbox {
-        display: inline-block;
+        display: inline-block; 
     }
     .blocsapp-device-iphone5 {
         background-size: 216px 425px;
