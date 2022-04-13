@@ -98,10 +98,6 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
 
 .b-parallax {
     background-attachment: fixed;
@@ -127,22 +123,7 @@ a:hover {
     border-color: rgba(255, 255, 255, .2);
 }
 
-.d-bloc .a-btn,
-.d-bloc .navbar a,
-.d-bloc .navbar-brand,
-.d-bloc a .icon-sm,
-.d-bloc a .icon-md,
-.d-bloc a .icon-lg,
-.d-bloc a .icon-xl,
-.d-bloc h1 a,
-.d-bloc h2 a,
-.d-bloc h3 a,
-.d-bloc h4 a,
-.d-bloc h5 a,
-.d-bloc h6 a,
-.d-bloc p a {
-    color: rgba(255, 255, 255, .6);
-}
+
 
 .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
@@ -158,7 +139,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -367,7 +348,7 @@ a:hover {
 .nav-invert .navbar-brand {
     float: right;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -540,7 +521,8 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -660,6 +642,7 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+    z-index: 2;
 }
 
 .container {
@@ -709,7 +692,10 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 h2 {
@@ -783,21 +769,24 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #f3976c!important;
+    font-weight: 700;
+    z-index: 2;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #0b0a0a!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #0b0a0a!important;
 }
 
 .ltc-white {
     color: #FFFFFF!important;
+    
 }
 
 .ltc-white:hover {
@@ -1034,12 +1023,23 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .portfolio-thumb
+    {
+        width: 320px;
+        height: 320px;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .portfolio-thumb {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 }
 
