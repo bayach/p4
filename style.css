@@ -1037,6 +1037,10 @@ a
         width: 320px;
         height: 320px;
     }
+    img
+    {
+        max-width: 768px;
+    }
 }
 
 @media (max-width: 400px) {
