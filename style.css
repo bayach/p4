@@ -145,7 +145,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgb(124, 119, 119);
+    color: rgba(0, 0, 0, 1);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -226,7 +226,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: #e7e3e3;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -472,6 +472,7 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    color: #e7e3e3;
 }
 
 .icon-lg {
