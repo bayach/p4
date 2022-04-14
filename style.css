@@ -145,7 +145,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: rgb(124, 119, 119);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
